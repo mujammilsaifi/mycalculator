@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini project</title>
+    <link rel="stylesheet" href="miniproject.css" type="text/css">
+</head>
+<body>
+    <div class="wrap">
+        <center><h2>My Calculator </h2></center>
+        <form name="calcy">
+            <input type="text" class="display" name="display" value=""><br>
+            <input type="button" class="button" value="C" onclick="calcy.display.value=''" id="del">
+            <input type="button" class="button" value="/" onclick="calcy.display.value+='/'">
+            <input type="button" class="button" value="X" onclick="calcy.display.value+='*'">
+            <input type="button" class="button" value="&larr;" onclick="calcy.display.value=calcy.display.value.slice(0,-1)"><br>
+
+            <input type="button" class="button" value="7" onclick="calcy.display.value+='7'">
+            <input type="button" class="button" value="8" onclick="calcy.display.value+='8'">
+            <input type="button" class="button" value="9" onclick="calcy.display.value+='9'">
+            <input type="button" class="button" value="-" onclick="calcy.display.value+='-'"><br>
+
+            <input type="button" class="button" value="4" onclick="calcy.display.value+='4'">
+            <input type="button" class="button" value="5" onclick="calcy.display.value+='5'">
+            <input type="button" class="button" value="6" onclick="calcy.display.value+='6'">
+            <input type="button" class="button" value="+" onclick="calcy.display.value+='+'"><br>
+
+            <input type="button" class="button" value="1" onclick="calcy.display.value+='1'">
+            <input type="button" class="button" value="2" onclick="calcy.display.value+='2'">
+            <input type="button" class="button" value="3" onclick="calcy.display.value+='3'">
+            <input type="button" class="button" value="%" onclick="calcy.display.value+='%'"><br>
+
+            <input type="button" class="button" value="." onclick="calcy.display.value+='.'">
+            <input type="button" class="button" value="0" onclick="calcy.display.value+='0'">
+            <input type="button" class="equal" value="=" onclick="calcy.display.value=eval(calcy.display.value)">
+        </form>
+    </div>
+    
+</body>
+</html>
